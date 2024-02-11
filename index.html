@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="main-body" class="shadow p-3">
+        <div id="top-space" class=""></div>
+        <div ><input id="inp" class="form-control shadow-none " type="button"></div>
+        <div id="answer"></div>
+        <div>
+            <span>
+                <button onclick="document.getElementById('inp').value = ''" id="btn" class="btn">C</button>
+                <button  onclick="appendToDisplay('%')" id="btn" class="btn">%</button>
+                <button onclick="deletelast()" id="btn" class="btn"><img src="images/delete-left-svgrepo-com (1).svg" alt=""></button>
+                <button  onclick="appendToDisplay('/')" id="btn" class="btn"><img src="images/division-svgrepo-com.svg" alt=""></button>
+            </span>
+            <span>
+                <button onclick="appendToDisplay('7')" id="btn-sm" class="btn shadow ">7</button>
+                <button onclick="appendToDisplay('8')" id="btn-sm" class="btn shadow ">8</button>
+                <button onclick="appendToDisplay('9')" id="btn-sm" class="btn shadow ">9</button>
+                <button onclick="inp.value +='*'" id="btn-sm" class="btn shadow ">*</button>
+            </span>
+            <span>
+                <button onclick="appendToDisplay('4')" id="btn-sm" class="btn shadow ">4</button>
+                <button onclick="appendToDisplay('5')" id="btn-sm" class="btn">5</button>
+                <button onclick="appendToDisplay('6')" id="btn-sm" class="btn">6</button>
+                <button onclick="appendToDisplay('-')" id="btn-sm" class="btn">-</button>
+            </span>
+            <span>
+                <button onclick="appendToDisplay('1')" id="btn-sm" class="btn">1</button>
+                <button onclick="appendToDisplay('2')" id="btn-sm" class="btn">2</button>
+                <button onclick="appendToDisplay('3')" id="btn-sm" class="btn">3</button>
+                <button  onclick="appendToDisplay('+')" id="btn-sm" class="btn">+</button>
+            </span>
+            <span>
+                <button onclick="appendToDisplay('00')" id="btn-sm" class="btn">00</button>
+                <button onclick="appendToDisplay('0')" id="btn-sm" class="btn">0</button>
+                <button onclick="appendToDisplay(',')" id="btn-sm" class="btn">,</button>
+                <button onclick="calculate()" id="btn-smm" class="btn shadow ">=</button>
+            </span>
+            <div id="bottom-space" class=""></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
